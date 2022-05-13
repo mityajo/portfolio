@@ -27,10 +27,9 @@
                 <div class="button__arrow"></div>
             </button>
         </section>
-
         <nav class="menu">
             <ul class="menu__list">
-                <li><a href="#" class="menu__link active">Home</a></li>
+                <li><a href="#" class="menu__link">Home</a></li>
                 <li><a href="#" class="menu__link">about</a></li>
                 <li><a href="#" class="menu__link">portfolio</a></li>
                 <li><a href="#" class="menu__link">contacts</a></li>
@@ -41,7 +40,7 @@
         <section class="about">
             <div class="container">
                 <div class="about__header">
-                    <div class="about__title title flex-column">About</div>
+                    <h2 class="about__title title flex-column">About</h2>
                     <div class="about__text descr">Привет, меня зовут <span>Митягин Роман</span>. Я начинающий
                         Frontend
                         разработчик.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse expedita
@@ -85,13 +84,13 @@
         <!-- PORTFOLIO -->
         <section class="portfolio" id="portfolio">
             <div class="container">
-                <div class="portfolio__title title flex-column">Projects</div>
+                <h2 class="portfolio__title title flex-column">Projects</h2>
                 <div class="portfolio__text descr">Ниже представлены мои небольшие работы (примеры кода).</div>
                 <div class="portfolio__gallery">
                     <div class="portfolio__item">
                         <img src="img/bg/example_bg.jpg" alt="first-card">
                         <div class="item-portfolio flex-column">
-                            <div class="item-portfolio__title">title</div>
+                            <h3 class="item-portfolio__title">title</h3>
                             <div class="item-portfolio__subtitle">subtitle</div>
                             <button class="item-portfolio__button button">learn more</button>
                         </div>
@@ -99,7 +98,7 @@
                     <div class="portfolio__item">
                         <img src="img/bg/example_bg_02.jpg" alt="second-card">
                         <div class="item-portfolio flex-column">
-                            <div class="item-portfolio__title">title</div>
+                            <h3 class="item-portfolio__title">title</h3>
                             <div class="item-portfolio__subtitle">subtitle</div>
                             <button class="item-portfolio__button button">learn more</button>
                         </div>
@@ -107,15 +106,27 @@
                     <div class="portfolio__item">
                         <img src="img/bg/example_bg_03.jpg" alt="third-card">
                         <div class="item-portfolio flex-column">
-                            <div class="item-portfolio__title">title</div>
+                            <h3 class="item-portfolio__title">title</h3>
                             <div class="item-portfolio__subtitle">subtitle</div>
                             <button class="item-portfolio__button button">learn more</button>
                         </div>
                     </div>
-
                 </div>
-
             </div>
+        </section>
+
+        <div class="triangle"></div>
+
+        <!-- CONTACTS -->
+        <section class="contacts">
+            <div class="contacts__title title flex-column">Contacts</div>
+            <div class="contacts__text descr">Если у вас есть вопросы?</div>
+            <form class="contacts__form" action="">
+                <input class="contacts__input" type="text" name="name" placeholder="Name">
+                <input class="contacts__input" type="text" name="email" placeholder="Email">
+                <textarea class="contacts__area" name="message"type="text" placeholder="Your Message"></textarea>
+                <input class="contacts__button" type="button" value="submit">
+            </form>
         </section>
     </main>
 </body>
