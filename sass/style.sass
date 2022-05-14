@@ -272,4 +272,36 @@ section
         &:hover
             background-color: #04c2c9
             border-color: #04c2c9
-            
+
+// FOOTER
+.footer
+    padding: 70px 0 50px
+    background-color: #1b242f
+    &::before
+        content: ''
+        display: block
+        width: 70px
+        height: 70px
+        background-color: #fb1f79
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+    &__social
+        display: flex
+        align-items: center
+        justify-content: center
+        &__item
+
+            &_1::before
+                content: '\f189'
+                display: block
+                width: 70px
+                height: 70px
+
+            &_2
+
+            &_3
+
+        &__note
+            text-align: center
+            color: #fff
