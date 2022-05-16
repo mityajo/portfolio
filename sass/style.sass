@@ -5,7 +5,7 @@
     padding: 0
     margin: 0
     font-size: 20px
-    font-family: 'Raleway', sans-serif
+    font-family: 'Raleway'
 
 a
     text-decoration: none
@@ -13,6 +13,8 @@ a
 
 li
     list-style: none
+
+$mainBlueColor: #04c2c9
 
 .container
     max-width: 1200px
@@ -110,7 +112,7 @@ section
     height: 50px
     width: 100%
     background-color: #1b242f
-    border-bottom: 3px solid #04c2c9
+    border-bottom: 3px solid $mainBlueColor
     &__list
         display: flex
         max-width: 1200px
@@ -134,7 +136,7 @@ section
         margin-bottom: 80px
     &__text span
         font-size: inherit
-        color: #04c2c9
+        color: $mainBlueColor
     &__body
         display: flex
         justify-content: space-around
@@ -167,7 +169,7 @@ section
         background-color: #00a1a7
     &__name
         width: 110px
-        background-color: #04c2c9
+        background-color: $mainBlueColor
         color: #fff
         font-size: 15px
         font-weight: bold
@@ -237,7 +239,7 @@ section
             background-color: #fff
     &__text
         margin-top: 50px
-        color: #04c2c9
+        color: $mainBlueColor
     &__form
         display: flex
         flex-direction: column
@@ -270,38 +272,63 @@ section
         margin-left: auto
         transition: all .3s
         &:hover
-            background-color: #04c2c9
-            border-color: #04c2c9
+            background-color: $mainBlueColor
+            border-color: $mainBlueColor
 
 // FOOTER
 .footer
     padding: 70px 0 50px
     background-color: #1b242f
-    &::before
-        content: ''
-        display: block
-        width: 70px
-        height: 70px
-        background-color: #fb1f79
+    position: relative
+    &__button
+        background-color: #e31b6d
         position: absolute
         left: 50%
+        top: -25px
         transform: translateX(-50%)
+        transition: all .3s
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &::before
+            content: ''
+            display: block
+            width: 15px
+            height: 15px
+            border-top: 4px solid #fff
+            border-left: 4px solid #fff
+            transform: rotate(45deg) translate(3px, 3px)
+        &::after
+            content: ''
+            display: block
+            width: 15px
+            height: 15px
+            border-top: 4px solid #fff
+            border-left: 4px solid #fff
+            transform: rotate(45deg)
+        &:hover
+            background-color: #fb1f79
     &__social
         display: flex
         align-items: center
         justify-content: center
         &__item
 
-            &_1::before
-                content: '\f189'
-                display: block
-                width: 70px
-                height: 70px
+            &_1
 
             &_2
 
             &_3
+    &__note
+        text-align: center
+        color: #8f9aa7
+        text-transform: uppercase
+        font-size: 14px
+    &__date
+        font-size: 14px
+        color: #e31b6d
 
-        &__note
-            text-align: center
-            color: #fff
+.button-footer
+    width: 50px
+    height: 50px
