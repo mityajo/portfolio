@@ -313,20 +313,32 @@ section
         display: flex
         align-items: center
         justify-content: center
-        &__item
-
-            &_1
-
-            &_2
-
-            &_3
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 55px
+        height: 55px
+        background-color: #262f38
+        transition: all .3s
+        &:not(:last-child)
+            margin-right: 30px
+        &:hover
+            background: #04c2c9
+            // box-shadow: 0 0 0 3px rgb(4 94 201 / 10%)
+            transform: scale(0.9)
+        img
+            display: block
+            width: 60%
+            height: 60%
     &__note
         text-align: center
         color: #8f9aa7
         text-transform: uppercase
         font-size: 14px
+        margin-top: 35px
     &__date
-        font-size: 14px
+        font-size: 18px
         color: #e31b6d
 
 .button-footer
