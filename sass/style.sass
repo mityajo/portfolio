@@ -35,6 +35,9 @@ $mainBlueColor: #04c2c9
     left: 0
     right: 0
 
+.show
+    display: block
+
 section
     padding: 6.25rem 0 8.125rem 0
     background-color: #fff
@@ -72,7 +75,6 @@ section
         color: #fff
         font-size: 2rem
         font-weight: bold
-        z-index: 5
         span
             font-family: inherit
             font-size: 40px
@@ -97,7 +99,6 @@ section
     transition: all 0.3s
     color: #fff
     cursor: pointer
-    z-index: 5
     &__text
         font-family: inherit
         font-size: 24px
@@ -256,7 +257,7 @@ section
         background-color: #1e242c
         border: none
         min-height: 150px
-        margin-bottom: 5px
+        margin-bottom: 10px
         padding: 10px 15px
         color: #fff
         outline: none
@@ -276,6 +277,10 @@ section
             border-color: $mainBlueColor
 
 // FOOTER
+.button-footer
+    width: 50px
+    height: 50px
+
 .footer
     padding: 70px 0 50px
     background-color: #1b242f
@@ -325,7 +330,6 @@ section
             margin-right: 30px
         &:hover
             background: #04c2c9
-            // box-shadow: 0 0 0 3px rgb(4 94 201 / 10%)
             transform: scale(0.9)
         img
             display: block
@@ -341,6 +345,54 @@ section
         font-size: 18px
         color: #e31b6d
 
-.button-footer
-    width: 50px
-    height: 50px
+// MODAL
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.5)
+    overflow: hidden
+    &__wrap
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+    &__content
+        background-color: #fff
+        max-width: 40%
+    &__slider
+        img
+            width: 100%
+            height: auto
+            display: block
+    &__info
+        padding: 20px
+        border-top: 3px solid #1b242f
+        text-align: left
+    &__title
+        line-height: 40px
+        font-size: 28px
+        font-weight: bold
+        color: #444
+        text-transform: uppercase
+    &__subtitle
+        font-size: 16px
+        font-weight: bold
+        color: #c0c0c0
+        text-transform: uppercase
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        padding-bottom: 15px
+        margin-bottom: 15px
+    &__descr
+        font-size: 15px
+        color: #444
+    &__footer
+        display: flex
+        justify-content: space-between
+    &__button
+        color: #000
+    &__exit
+        display: block
