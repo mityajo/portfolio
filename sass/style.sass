@@ -61,14 +61,14 @@ section
     width: 100%
     height: 100vh
     background: url(../img/bg/home_bg.jpg) center center/cover no-repeat
-    &:after
-        content: ""
-        width: 100%
-        height: 100vh
-        background-color: rgba(4, 194, 201, 0)
-        position: absolute
-        top: 0
-        left: 0
+    // &:after
+    content: ""
+    width: 100%
+    height: 100vh
+    background-color: rgba(4, 194, 201, 0)
+    position: absolute
+    top: 0
+    left: 0
     &__text
         max-width: 50%
         text-align: center
@@ -354,6 +354,7 @@ section
     left: 0
     background-color: rgba(0, 0, 0, 0.5)
     overflow: hidden
+    // display: none
     &__wrap
         width: 100%
         height: 100%
@@ -362,7 +363,7 @@ section
         align-items: center
     &__content
         background-color: #fff
-        max-width: 40%
+        max-width: 40vw
     &__slider
         img
             width: 100%
@@ -392,7 +393,43 @@ section
     &__footer
         display: flex
         justify-content: space-between
+        align-items: center
+        padding: 0 20px 20px
     &__button
-        color: #000
-    &__exit
-        display: block
+        background-color: #e31b6d
+        border-color: #e31b6d
+        justify-content: space-around
+        max-width: 130px
+        max-height: 40px
+        font-size: 15px
+        font-weight: 600
+        text-transform: uppercase
+        transition: all .3s
+        &:hover
+            background-color: #fff
+            color: #e31b6d
+        &::before
+            content: '\1F517'
+            font-size: 15px
+    &__close
+        width: 23px
+        height: 23px
+        cursor: pointer
+        transition: all .5s
+        &::before
+            content: ''
+            display: block
+            width: 23px
+            height: 4px
+            background-color: #c0c0c0
+            transform: rotate(45deg) translate(8px, 6px)
+        &::after
+            content: ''
+            display: block
+            width: 23px
+            height: 4px
+            background-color: #c0c0c0
+            transform: rotate(-45deg) translate(-3px, 5px)
+        &:hover
+            transform: rotate(90deg) scale(1.2)
+
