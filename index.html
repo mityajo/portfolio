@@ -20,16 +20,24 @@
 <body>
     <main class="content">
         <!-- HOME -->
-        <section class="home flex-column">
-            <h1 class="home__text">
+        <div class="home">
+
+            <canvas class="home__canvas" id="canvas">Your browser is not supported.</canvas>
+
+
+
+
+
+            <!-- <h1 class="home__text">
                 Добро пожаловать на <span>Демо - сайт</span>
                 by Junior Frontend Develover
-            </h1>
-            <button class="home__button button">
+            </h1> -->
+
+            <!-- <button class="home__button button">
                 <div class="button__text">More</div>
                 <div class="button__arrow"></div>
-            </button>
-        </section>
+            </button> -->
+        </div>
 
         <nav class="menu">
             <ul class="menu__list">
@@ -147,11 +155,14 @@
         <div class="modal">
             <div class="modal__wrap">
                 <div class="modal__content">
-                    <div class="modal__slider"><img src="img/portfolio/Cinema_Hall/cinema_01.jpg" alt="modal exmp"></div>
+                    <div class="modal__slider"><img src="img/portfolio/Cinema_Hall/cinema_01.jpg" alt="modal exmp">
+                    </div>
                     <div class="modal__info">
                         <div class="modal__title">Кинозал</div>
                         <div class="modal__subtitle">Одностраничное приложение.</div>
-                        <div class="modal__descr">Реализация одностраничного приложения. Представляет собой кинозал с функциями: бронирование мест, отмены бронирования, запоминание статуса мест после перезагрузки страницы.<br> Статус: находится на доработке</div>
+                        <div class="modal__descr">Реализация одностраничного приложения. Представляет собой кинозал с
+                            функциями: бронирование мест, отмены бронирования, запоминание статуса мест после
+                            перезагрузки страницы.<br> Статус: находится на доработке</div>
                     </div>
                     <div class="modal__footer">
                         <a href="https://github.com/mityajo/CinemaHall" class="modal__button button">GitHub</a>
@@ -163,6 +174,7 @@
 
     </main>
     <script src="js/script.js"></script>
+    <script src="js/canvas.js"></script>
 </body>
 
 </html>

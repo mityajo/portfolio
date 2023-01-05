@@ -65,7 +65,8 @@ section
 .home
     width: 100%
     height: 100vh
-    background: url(../img/bg/home_bg.jpg) center center/cover no-repeat
+    // background: url(../img/bg/home_bg.jpg) center center/cover no-repeat
+    overflow: hidden
     &__text
         max-width: 50%
         text-align: center
@@ -84,6 +85,10 @@ section
             border: 3px solid #1b242f
             .button__arrow
                 transform: rotate(90deg)
+    &__canvas
+        margin: 0
+        padding: 0
+        background-color: #252934
 
 .button
     display: flex
