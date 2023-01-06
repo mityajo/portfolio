@@ -63,14 +63,17 @@ section
 
 // HOME
 .home
-    width: 100%
-    height: 100vh
     overflow: hidden
-    &__text
+    &__canvas
+        margin: 0
+        padding: 0
+    &__wrapper
+        position: absolute
+    &__title
         max-width: 50%
-        text-align: center
         color: #fff
         font-size: 2rem
+        text-align: center
         font-weight: bold
         span
             font-family: inherit
@@ -84,10 +87,6 @@ section
             border: 3px solid #1b242f
             .button__arrow
                 transform: rotate(90deg)
-    &__canvas
-        margin: 0
-        padding: 0
-        // background-color: #252934
 
 .button
     display: flex

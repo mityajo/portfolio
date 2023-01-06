@@ -13,7 +13,6 @@
             particleMaxVelocity: 0.5,
             lineLength: 150
         };
-
     window.onresize = function () {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -102,5 +101,4 @@
         loop();
     }
     init();
-
 }());
