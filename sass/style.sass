@@ -4,8 +4,8 @@
     box-sizing: border-box
     padding: 0
     margin: 0
-    font-size: 20px
     font-family: 'Raleway'
+    font-size: 16px
 
 a
     text-decoration: none
@@ -19,7 +19,9 @@ img
     height: 100%
     display: block
 
-$mainBlueColor: #04c2c9
+$BlueColor: #04c2c9
+$OrangeColor: #e98102
+$PinkColor: #e31b6d
 
 .container
     max-width: 1200px
@@ -32,7 +34,7 @@ $mainBlueColor: #04c2c9
     align-items: center
 
 .active
-    color: #e98102
+    color: $OrangeColor
 
 .fixed
     position: fixed
@@ -70,29 +72,30 @@ section
     &__wrapper
         position: absolute
     &__title
-        max-width: 50%
         color: #fff
-        font-size: 2rem
+        font-size: 2.688rem
         text-align: center
-        font-weight: bold
+        font-weight: 400
+        pointer-events: none
         span
             font-family: inherit
-            font-size: 40px
-            font-weight: 700
-            color: #e98102
+            font-size: 2.688rem
+            font-weight: 600
+            color: $PinkColor
     &__button
         margin-top: 20px
+        font-size: 1.333rem
         &:hover
-            background-color: #1b242f
-            border: 3px solid #1b242f
+            background-color: $BlueColor
+            border: 3px solid $BlueColor
             .button__arrow
                 transform: rotate(90deg)
 
 .button
     display: flex
-    justify-content: space-around
+    justify-content: space-evenly
     text-align: center
-    width: 200px
+    width: 180px
     padding: 7px 15px
     background-color: transparent
     border: 3px solid #fff
@@ -113,7 +116,7 @@ section
     height: 50px
     width: 100%
     background-color: #1b242f
-    border-bottom: 3px solid $mainBlueColor
+    border-bottom: 3px solid $BlueColor
     &__list
         display: flex
         max-width: 1200px
@@ -125,7 +128,7 @@ section
         margin: 0 20px
         transition: all 0.3s
         &:hover
-            color: #e98102
+            color: $OrangeColor
 
 // ABOUT
 .descr
@@ -137,7 +140,7 @@ section
         margin-bottom: 80px
     &__text span
         font-size: inherit
-        color: $mainBlueColor
+        color: $BlueColor
     &__body
         display: flex
         justify-content: space-around
@@ -170,7 +173,7 @@ section
         background-color: #00a1a7
     &__name
         width: 110px
-        background-color: $mainBlueColor
+        background-color: $BlueColor
         color: #fff
         font-size: 15px
         font-weight: bold
@@ -216,14 +219,14 @@ section
         color: #000
     &__subtitle
         font-size: 16px
-        color: #e98102
+        color: $OrangeColor
     &__button
         margin-top: 3.125rem
         color: #000
-        border: 2px solid #e98102
+        border: 2px solid $OrangeColor
         &:hover
             color: #fff
-            background-color: #e98102
+            background-color: $OrangeColor
 
 .triangle
     width: 0
@@ -245,7 +248,7 @@ section
             background-color: #fff
     &__text
         margin-top: 50px
-        color: $mainBlueColor
+        color: $BlueColor
     &__form
         display: flex
         flex-direction: column
@@ -278,8 +281,8 @@ section
         margin-left: auto
         transition: all .3s
         &:hover
-            background-color: $mainBlueColor
-            border-color: $mainBlueColor
+            background-color: $BlueColor
+            border-color: $BlueColor
 
 // FOOTER
 .button-footer
@@ -291,7 +294,7 @@ section
     background-color: #1b242f
     position: relative
     &__button
-        background-color: #e31b6d
+        background-color: $PinkColor
         position: absolute
         left: 50%
         top: -25px
@@ -334,7 +337,7 @@ section
         &:not(:last-child)
             margin-right: 30px
         &:hover
-            background: #04c2c9
+            background: $BlueColor
             transform: scale(0.9)
         img
             display: block
@@ -348,7 +351,7 @@ section
         margin-top: 35px
     &__date
         font-size: 18px
-        color: #e31b6d
+        color: $PinkColor
 
 // MODAL
 .modal
@@ -401,8 +404,8 @@ section
         align-items: center
         padding: 0 20px 20px
     &__button
-        background-color: #e31b6d
-        border-color: #e31b6d
+        background-color: $PinkColor
+        border-color: $PinkColor
         justify-content: space-around
         max-width: 130px
         max-height: 40px
@@ -412,7 +415,7 @@ section
         transition: all .3s
         &:hover
             background-color: #fff
-            color: #e31b6d
+            color: $PinkColor
         &::before
             content: '\1F517'
             font-size: 15px
